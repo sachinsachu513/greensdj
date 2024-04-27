@@ -1,0 +1,35 @@
+ table.redtable={
+
+ font-family:"Times New Roman",Times,serif;
+
+ width:100%;
+ border-collapse:collapse;
+ }
+ table.redtable td,table.redtable th{
+ border:1px solid #FFFFFF;
+ padding:3px 2px;
+
+ }
+ table.redtable tbody td {
+ font-size:24px;
+ }
+ table.redtable thead{
+ background:#086FA4;
+ border-bottom:5px solid #FFFFFF;
+
+ }
+ table.redtable thead th{
+ font-size:34px;
+ font-weight:bold;
+ color:#FFFFFF;
+ text-align:center;
+ border-left:2px solid #FFFFFF
+
+ }
+ th{
+
+ color: red;
+ }
+ td,th{
+border:1px solid #ccc
+ }

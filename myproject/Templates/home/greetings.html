@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>greetings</title>
+     {% load static %}
+    <link rel ="stylesheet" href="{% static  'css\\greetings.css'%}">
+
+</head>
+<body>
+<h1> Greetings! welcome sachin<h1><br>
+
+    <h3> New Registration <a href="/reg">click here </a> </h3>
+    <h3> For Login<a href='/home'>click here </a><br>
+    <h3>IPL Points Table <a href='/second/ipltable'>click here </a><br>
+    <h3>Product Purchase <a href='/second/getprice'>click here </a><br>
+    <h3>Database <a href='/admin/'>click here</a><br>
+    <h3> Registered Student <a href='/model/get'> click here </a>
+    <h3> Simple form without Html <a href='/model/register'> click here</a>
+    <h3> Simple form without Html2 <a href='/model/simple'> click here</a>
+        <h3>submit form to database <a href='/model/createuser'> click here</a>
+        <h3> form to database to html<a href='/model/get/'> click here</a>
+            <h3>curd operation<a href="/curd/empdetail/"> click here </a>
+            <h3>REST GET<a href="/rest/getuser/"> click here </a>
+            <h3>REST POST<a href="/rest/post/"> click here </a>
+            <h3>REST delete<a href="/rest/delete/<id>"> click here </a>
+            <h3>REST update<a href="/rest/update/<id>"> click here </a>
+</body>
+</html>

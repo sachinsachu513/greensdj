@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> form to database to html</title>
+
+</head>
+<body>
+<table>
+    <tr>
+    <th> firstname </th>
+    <th> lastname </th>
+    <th> phone_number </th>
+    <th> email_id </th>
+    <th> password </th>
+    <th> confirm_password </th>
+    </tr>
+    <tr>
+        {% for s in details %}
+         <td> {{s.firstname}}</td>
+         <td> {{s.lastname}}</td>
+         <td> {{s.phone_number}}</td>
+         <td> {{s.email_id}}</td>
+         <td> {{s.password}}</td>
+         <td> {{s.confirm_password}}</td>
+    </tr>
+        {% endfor %}
+
+
+
+
+
+
+
+
+</table>
+
+</body>
+</html>

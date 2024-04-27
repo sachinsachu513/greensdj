@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>employ details</title>
+</head>
+<body>
+<h1> WELCOME TO MY DJANGO APPLICATION</h1>
+<h2>  here all employ datas are listed</h2>
+<table>
+  <tr>
+    <th>id</th>
+    <th> Name</th>
+    <th> Salary</th>
+    <th>phone number</th>
+    <th>adress</th>
+    <th>Email id</th>
+  </tr>
+  <tr>
+    {% for e in emp %}
+<!--    <td>{{e.id}}</td>-->
+    <td>{{e.empno}}</td>
+    <td>{{e.empname}}</td>
+    <td>{{e.empsalary}}</td>
+    <td>{{e.empphno}}</td>
+    <td>{{e.empadress}}</td>
+    <td>{{e.email}}</td>
+    <td><a href="/curd/update/{{e.id}}">edit</a></td>
+    <td><a href="/curd/delete/{{e.id}}">delete</a></td>
+  </tr>
+  {% endfor %}
+
+</table>
+<a href="/curd/create"><button>Add Employees</button></a>
+
+
+</body>
+</html>

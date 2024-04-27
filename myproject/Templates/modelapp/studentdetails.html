@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <title> registration form</title>
+      {% load static %}
+    <link rel ="stylesheet" href="{% static  'css\\modela.css'%}">
+
+</head>
+    <body>
+    <table class="redtable">
+        <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Phone Number</th>
+        <th>Course</th>
+        <th>Email</th>
+        <th>Doj</th>
+        </tr>
+        <tr>
+            {% for s in student %}
+            <td>{{s.studentid}}</td>
+            <td>{{s.studentname}}</td>
+            <td>{{s.phonenumber}}</td>
+            <td>{{s.coursename}}</td>
+            <td>{{s.emailid}}</td>
+            <td>{{s.doj}}</td>
+        </tr>
+        {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </table>
+
+
+
+
+</html>
